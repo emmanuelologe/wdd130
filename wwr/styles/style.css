@@ -1,3 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Neuton:ital@1&display=swap');
+
+
+.home-title{
+    font-family: 'Bubblegum san';
+    font-size: 2em;
+    margin-top: 10px;
+}
+#logo-link{
+    padding-top: 5px;
+}
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -6,6 +18,7 @@ nav a{
     text-align: center;
     color: black;
     text-decoration: none;
+    padding: 35px;
 }
 #hero-msg h1, #hero-msg h4{
     text-align: center;
@@ -21,6 +34,15 @@ main section{
 }
 body{
     background-color: #e1dee3;
+    font-family: Neuton, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.icon{
+    padding-top: 10px;
+}
+h2{
+    margin: 0;
 }
 header{
     background-color: #e1dee3;
@@ -33,6 +55,10 @@ nav a:hover{
     background-color: #f2542d;
     color: black;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover{
     background-color: #3a4f41;
@@ -40,13 +66,17 @@ nav a:hover{
 }
 #background{
     background-color: #3a4f41;
+    line-height: 1.5em;
 }
 .msg{
     background-color: #f2542d;
+    padding: 35px;
 }
 footer{
     background-color: #3a4f41;
     color: black;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a{
     color: black;
@@ -61,16 +91,33 @@ footer p a:hover{
 footer:hover{
     color: #e1dee3;
 }
+footer .social img{
+    padding-top: 15px;
+}
 h4{
     color: black;
 }
-.msg h2, .msg p{
+.msg h2{
     color: black;
+    font-family: 'Bubblegum sans';
+}
+.msg p{
+    color: black;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 .logo, .icon{
     width: 80px;
 }
 #hero-img{
-    width: 100px;
+    width: 200px;
 }
-
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+.card-img{
+    border: 10px solid #3a4f41;
+}
+main section img{
+    box-sizing: border-box;
+}
