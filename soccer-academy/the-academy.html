@@ -11,7 +11,7 @@
     <div id="content">
         <header>
             <a id="logo-link" href="index.html">
-                <img class="logo" src="images/tomada logo.png" alt="Tomada Soccer Academy logo">
+                <img class="logo" src="images/tomada_logo.png" alt="Tomada Soccer Academy logo">
             </a>
             <nav>
                 <a href="index.html">Home</a>
@@ -20,54 +20,64 @@
                 <a href="matches-statistics.html">Matches/ Statistics</a> 
             </nav>
         </header>
-        <div id="Academy-hero">
+        <div id="academy-hero">
             <div id="hero-box">
-                <img id="hero_img" src="images/the_academy.jpg" style="width:1600px;height:1000px" alt="A football match ">
+                <img id="hero_img" src="images/the_academy.jpg" style="width:1600px;height:1200px" alt="A football match ">
             </div>
         </div>
         <main>
-            <section class="Academy-msg">
-            <h2>TOMADA SOCCER ACADEMY</h2>
+            <section class="academy-msg">
+                <h2>TOMADA SOCCER ACADEMY</h2>
                 <p>Tomada soccer academy was made for every young girl and boy with the potential and desire to become a professional footballer. Tomada soccer academy was made to help the youths accomplish their dreams by giving them the training and push to become a world-class players someday. We have world-class coaches who will be there to support and train our young athletes. 
                     If you believe you or your son/daughter has the ability, talent and desire to play the game professionally, then joining Tomada Soccer Academy could prove to be the most important, and the best, decision of his/her life.
                     The male first team is made up of our young boys from 14-18 and they participate in state and national level competitions.
                     The female first team is made up of our young girls from 14-18 and they participate in state and national level competitions.
                 </p>
             </section>
-        <section>    
-            <img class="Kids-playing" src="images/coach_team.jpg" style="width:1600px;height:900px" alt="Kids and coach training">
-        </section>
+            <div>    
+                <img class="Kids-playing" src="images/coach_team.jpg" style="width:1600px;height:1000px" alt="Kids and coach training">
+            </div>
         
-                
-        <img class="female-match" src="images/female_2.jpg" alt="Female playing">
-        <div id="feedback"></div>
-        <form action="/my-handling-form-page" method="post">
-            <ul>
-              <li>
-                <label for="name">Full-Name:</label>
-                <input type="text" id="name" name="user_name" />
-              </li>
-              <li>
-                <label for="Age">Age:</label>
-                <input type="number" id="age" name="user_age" />
-              </li>
-              <li>
-                <label for="name">Guardian Full-Name:</label>
-                <input type="text" id="name" name="user_name" />
-              </li>
-              <li>
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" name="user_email" />
-              </li>
-              <li>
-                <label for="address">Address:</label>
-                <textarea id="msg" name="user_address"></textarea>
-              </li>
-              <li class="button">
-                <button type="submit">Sign Up</button>
-              </li>                  
-            </ul>
-          </form>  
+        
+
+            <div id="form-box">        
+                <img class="female-match" src="images/female_2.jpg" style="width:700px;height:900px" alt="Female playing">
+                <div id="feedback"></div>
+                <!-- The Modal -->
+                <div id="id01" class="academy-modal">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                      class="close" title="Close Modal">&times;
+                    </span>
+
+                    <!-- Modal Content -->
+                    <form class="modal-content animate" action="/action_page.php">
+                        <div class="imgcontainer">
+                            <h2>SIGN UP TO THE ACADEMY</h2>
+                            <!-- <img src="images/image_avatar2.png" alt="Avatar" class="avatar"> -->
+                        </div>
+                    
+                        <div class="container">
+                            <label for="fname"><b>Fullname</b></label>
+                            <input type="text" placeholder="Enter Your Fullname" name="fname" required>
+
+                            <label for="gname"><b>Guardian fullname</b></label>
+                            <input type="text" placeholder="Enter Guardian fullname" name="gname" required>
+
+                            <label for="age"><b>Age</b></label>
+                            <input type="number" placeholder="Enter Your Age" name="age" required>
+
+                            <label for="email"><b>Email</b></label>
+                            <input type="email" placeholder="Enter Your Email" name="email" required>
+
+                            <label for="adre"><b>Address</b></label>
+                            <input type="text" placeholder="Enter Address" name="adre" required>
+
+                            <button type="submit" formtarget="_self">Submit</button>
+                        </div>
+                    </form>  
+                </div>      
+            </div>    
+
         </main>
         <footer>
             <p>Tomada Soccer Academy &copy; 2023 - Emmanuel Ologe</p>
@@ -85,3 +95,6 @@
                 </a>
             </div>
         </footer>     
+    </div>    
+</body>
+</html> 
